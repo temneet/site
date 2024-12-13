@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/payment.css">
+
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="Home.html">Главная</a></li>
+                <li><a href="korzina.html">Корзина</a></li>
+                <li><a href="Shop.html">Каталог</a></li>
+                <li><a href="AboutUss.html">О нас</a></li>
+                <li><a href="Contact.html">Контакты</a></li>
+                <li><a class="active" href="Payment.html">Платеж</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="payment-form">
+        <h2>Детали оплаты</h2>
+        <form onsubmit="return validateForm()">
+
+            <div class="form-group">
+                <label for="cardName">Имя на карте</label>
+                <input type="text" id="cardName" name="cardName">
+                <span id="cardNameError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">Номер карты</label>
+                <input type="text" id="cardNumber" name="cardNumber">
+                <span id="cardNumberError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="expiryDate">Дата истечения срока действия</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                <span id="expiryDateError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv">
+                <span id="cvvError" class="error"></span>
+            </div>
+            
+            <button type="submit">Оплатить</button>
+        </form>
+    </div>
+
+    <script src="./js/payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/korzina.css" type="text/css">
+    <title>Корзина</title>
+</head>
+<body>
+  <section id="header">
+    <a href="#"><img src="" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="Home.html">Главная</a></li>
+            <li><a class="active" href="korzina.html">Корзина</a></li>
+            <li><a href="Shop.html">Каталог</a></li>
+            <li><a href="AboutUss.html">О нас</a></li>
+            <li><a href="Contact.html">Контакты</a></li>
+            <li><a href="Payment.html">Платеж</a></li>
+        </ul>
+    </div>
+</section>
+  <div class="container">
+    <div class="payment_details">
+      <h1>Данные </h1>
+      <div class="details_card">
+        <div class="name_address">
+          <div class="first_lastName">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Фамилия" />
+          </div>
+          <div class="address">
+            <input type="text" onkeyup="change()" id="put" placeholder="Адресс" />
+            <input type="text" placeholder="Индекс" />
+            <input type="text" placeholder="Страна" />
+          </div>
+        </div>
+        <h1>Детали доставки</h1>
+        <div class="shipping_card">
+          <div class="new_card">
+            <h4>Сохраненный</h4>
+            <p id="output">Стерлибашево, ул Карла Маркса, дом 105</p>
+            <p>453180</p>
+          </div>
+          <div class="add_savedcard">
+            <h4>Изменить адрес</h4>
+            <p>Стерлитамак, пр-кт Октября, дом 43</p>
+            <p>453100</p>
+          </div>
+        </div>
+        <div class="proced_payment">
+          <a href="Payment.html">Перейти к оплате</a>
+        </div>
+      </div>
+    </div>
+    <div class="order_summary">
+      <h1>Корзина</h1>
+      <div class="summary_card">
+        <div class="card_item">
+          <div class="product_img">
+            <img src="./img/products/f5.jpg" alt="" />
+          </div>
+          <div class="product_info">
+            <h1>Лонгслив мужской Summit Valley Ls Crew</h1>
+            <p>Columbia</p>
+            <div class="close-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <div class="product_rate_info">
+              <h1>4594₽</h1>
+              <span class="pqt-minus">-</span>
+              <span class="pqt">1</span>
+              <span class="pqt-plus">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="card_item">
+          <div class="product_img">
+            <img src="./img/products/n6.jpg" alt="" />
+          </div>
+          <div class="product_info">
+            <h1>Свитшот с принтом "футбол"</h1>
+            <p>La REDOUTE</p>
+            <div class="close-btn">
+              <i class="fa fa-close"></i>
+            </div>
+            <div class="product_rate_info">
+              <h1>1420₽</h1>
+              <span class="pqt-minus">-</span>
+              <span class="pqt">1</span>
+              <span class="pqt-plus">+</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="order_price">
+          <p>Сумма товара</p>
+          <h4>6014₽</h4>
+        </div>
+        <div class="order_service">
+          <p>Доставка</p>
+          <h4>249₽</h4>
+        </div>
+        <div class="order_total">
+          <p>Общая сумма</p>
+          <h4>6263₽</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
